@@ -31,6 +31,10 @@ do CUDA_VISIBLE_DEVICES=${gpu_id} python simpler_env/main_inference.py --policy-
 
 done
 
+exit 0
+
+done
+
 done
 
 

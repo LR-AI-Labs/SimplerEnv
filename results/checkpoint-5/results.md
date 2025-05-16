@@ -1,0 +1,29 @@
+|                                                    | 0    | 1               | 2         | 3      | 4      | 5         | 6          | 7           | 8       | 9       |
+|:---------------------------------------------------|:-----|:----------------|:----------|:-------|:-------|:----------|:-----------|:------------|:--------|:--------|
+| coke_can/matching_avg                              | nan  | 0.857           | 0.71      | 0.567  | 0.787  | 0.17      | nan        | 0.027       | 0.163   | 0.727   |
+| coke_can/variant_avg                               | nan  | 0.898           | 0.813     | 0.49   | 0.823  | 0.006     | nan        | 0.022       | 0.545   | nan     |
+| coke_can/matching/horizontal                       | nan  | 0.96            | 0.86      | 0.82   | 0.74   | 0.21      | nan        | 0.05        | 0.27    | 0.85    |
+| coke_can/matching/vertical                         | nan  | 0.9             | 0.79      | 0.33   | 0.74   | 0.21      | nan        | 0.0         | 0.03    | 0.43    |
+| coke_can/matching/standing                         | nan  | 0.71            | 0.48      | 0.55   | 0.88   | 0.09      | nan        | 0.03        | 0.19    | 0.9     |
+| coke_can/variant/horizontal                        | nan  | 0.969           | 0.92      | 0.569  | 0.822  | 0.005     | nan        | 0.022       | 0.711   | nan     |
+| coke_can/variant/vertical                          | nan  | 0.76            | 0.704     | 0.204  | 0.754  | 0.0       | nan        | 0.013       | 0.271   | nan     |
+| coke_can/variant/standing                          | nan  | 0.964           | 0.813     | 0.698  | 0.893  | 0.013     | nan        | 0.031       | 0.653   | nan     |
+| move_near/variant                                  | nan  | 0.5             | 0.446     | 0.323  | 0.792  | 0.031     | nan        | 0.04        | 0.477   | nan     |
+| move_near/matching                                 | nan  | 0.442           | 0.354     | 0.317  | 0.779  | 0.042     | nan        | 0.05        | 0.462   | 0.663   |
+| drawer/matching_avg                                | nan  | 0.73            | 0.565     | 0.597  | 0.25   | 0.227     | nan        | 0.139       | 0.356   | 0.268   |
+| drawer/variant_avg                                 | nan  | 0.323           | 0.267     | 0.294  | 0.353  | 0.011     | nan        | 0.069       | 0.177   | nan     |
+| drawer/matching/open                               | nan  | 0.601           | 0.463     | 0.296  | 0.157  | 0.009     | nan        | 0.0         | 0.194   | 0.287   |
+| drawer/matching/close                              | nan  | 0.861           | 0.667     | 0.891  | 0.343  | 0.444     | nan        | 0.278       | 0.518   | 0.25    |
+| drawer/variant/open                                | nan  | 0.27            | 0.212     | 0.069  | 0.333  | 0.0       | nan        | 0.005       | 0.158   | nan     |
+| drawer/variant/close                               | nan  | 0.376           | 0.323     | 0.519  | 0.372  | 0.021     | nan        | 0.132       | 0.195   | nan     |
+| put_spoon_on_tablecloth/matching_partial           | nan  | nan             | nan       | 0.167  | nan    | 0.347     | 0.778      | nan         | 0.041   | 0.375   |
+| put_spoon_on_tablecloth/matching_entire            | nan  | nan             | nan       | 0.0    | nan    | 0.125     | 0.472      | nan         | 0.0     | 0.208   |
+| put_carrot_on_plate/matching_partial               | nan  | nan             | nan       | 0.208  | nan    | 0.528     | 0.278      | nan         | 0.333   | 0.333   |
+| put_carrot_on_plate/matching_entire                | nan  | nan             | nan       | 0.042  | nan    | 0.083     | 0.097      | nan         | 0.0     | 0.25    |
+| stack_green_block_on_yellow_block/matching_partial | nan  | nan             | nan       | 0.083  | nan    | 0.319     | 0.403      | nan         | 0.125   | 0.083   |
+| stack_green_block_on_yellow_block/matching_entire  | nan  | nan             | nan       | 0.0    | nan    | 0.0       | 0.042      | nan         | 0.0     | 0.083   |
+| put_eggplant_in_basket/matching_partial            | nan  | nan             | nan       | 0.0    | nan    | 0.667     | 0.875      | nan         | 0.083   | 0.0     |
+| put_eggplant_in_basket/matching_entire             | nan  | nan             | nan       | 0.0    | nan    | 0.431     | 0.569      | nan         | 0.041   | 0.0     |
+| apple_in_drawer/matching_avg                       | nan  | 0.065           | 0.13      | 0.213  | 0.037  | 0.0       | 0.0        | 0.0         | nan     | 0.361   |
+| apple_in_drawer/variant_avg                        | nan  | 0.026           | 0.021     | 0.101  | 0.206  | 0.0       | 0.0        | 0.0         | nan     | nan     |
+| ckpt_name                                          | ours | RT-1(Converged) | RT-1(15%) | RT-1-X | RT-2-X | Octo-Base | Octo-Small | RT-1(begin) | OpenVLA | RoboVLM |

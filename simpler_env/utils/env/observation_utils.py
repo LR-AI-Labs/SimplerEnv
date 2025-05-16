@@ -3,8 +3,10 @@ def get_image_from_maniskill2_obs_dict(env, obs, camera_name=None):
     if camera_name is None:
         if "google_robot" in env.robot_uid:
             camera_name = "overhead_camera"
+            image_key ="Color"
         elif "widowx" in env.robot_uid:
             camera_name = "3rd_view_camera"
+            image_key = "rgb"
         else:
             raise NotImplementedError()
-    return obs["image"][camera_name]["rgb"]
+    return obs["image"][camera_name][image_key].transpose(1, 0, 2)

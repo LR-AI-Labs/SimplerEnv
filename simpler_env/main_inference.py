@@ -94,6 +94,26 @@ if __name__ == "__main__":
             policy_setup=args.policy_setup,
             action_scale=args.action_scale,
         )
+    elif args.policy_model == "gr00t":
+        assert args.ckpt_path is not None
+        from simpler_env.policies.gr00t.gr00t_inference import Gr00tInference
+        model = Gr00tInference(
+            saved_model_path=args.ckpt_path,
+            policy_setup=args.policy_setup,
+            use_diffusion=True,
+            use_regression=False,
+            embodiment_tag=args.embodiment_tag
+        )
+    elif args.policy_model == "regression_gr00t":
+        assert args.ckpt_path is not None
+        from simpler_env.policies.gr00t.gr00t_inference import Gr00tInference
+        model = Gr00tInference(
+            saved_model_path=args.ckpt_path,
+            policy_setup=args.policy_setup,
+            use_diffusion=False,
+            use_regression=True,
+            embodiment_tag=args.embodiment_tag
+        )
     else:
         raise NotImplementedError()
 

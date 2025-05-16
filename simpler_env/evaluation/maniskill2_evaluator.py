@@ -63,7 +63,7 @@ def run_maniskill2_eval_single_episode(
         env_name,
         **additional_env_build_kwargs,
         **kwargs,
-    )
+    ).unwrapped
     # __import__('ipdb').set_trace()
     # initialize environment
     env_reset_options = {
@@ -113,7 +113,8 @@ def run_maniskill2_eval_single_episode(
     task_descriptions = []
     while not (predicted_terminated or truncated):
         # step the model; "raw_action" is raw model action output; "action" is the processed action to be sent into maniskill env
-        raw_action, action = model.step(image, task_description)
+        eef_pos = env.agent.robot.get_qpos()
+        raw_action, action = model.step(image, task_description, eef_pos=eef_pos)
         predicted_actions.append(raw_action)
         predicted_terminated = bool(action["terminate_episode"][0] > 0)
         if predicted_terminated:
